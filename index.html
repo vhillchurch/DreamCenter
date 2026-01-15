@@ -4,91 +4,87 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>VH Dream Center</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
 <body>
 
-  <header>
-    <img src="images/vhdc-logo.png" alt="VHDC Logo" class="logo" />
-    <h1>VH Dream Center</h1>
-    <p class="tagline">Loving People Where They Are Without Leaving Them Where They're At</p>
+  <!-- Banner -->
+  <header class="text-white text-center" style="background: url('Banner') center/cover no-repeat; padding: 100px 20px;">
+    <h1 class="display-4 fw-bold">Loving People Where They Are</h1>
+    <p class="lead">Without Leaving Them Where They're At.</p>
   </header>
 
-  <nav class="nav">
-    <a href="#services">What We Do</a>
-    <a href="#meetings">Meetings</a>
-    <a href="#impact">Impact</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <!-- About -->
+  <section class="container my-5 text-center" id="about">
+    <img src="VHDC Logo (2).png" alt="VHDC Logo" width="160" />
+    <h2 class="my-3">Welcome to VH Dream Center</h2>
+    <p>
+      We’re a community that believes in transformation through connection, compassion, and action. From weekly recovery meetings to emergency outreach — we meet people where they are.
+    </p>
+  </section>
 
-  <section id="services">
-    <h2>What We Do</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="images/narcan-box.jpg" alt="Narcan Box" />
-        <h3>Recovery Support</h3>
-        <p>Support groups, NA meetings, peer encouragement, and men’s sober living housing.</p>
-      </div>
-      <div class="card">
-        <img src="images/food-shelf.jpg" alt="Food Shelf" />
-        <h3>Basic Needs</h3>
-        <p>Grab & Go lunches, warming shelter, showers, laundry, clothing, and hygiene essentials.</p>
-      </div>
-      <div class="card">
-        <img src="images/community-partner.jpg" alt="Community Partner Spotlight" />
-        <h3>Community Connection</h3>
-        <p>Linking individuals to wrap-around services, housing, healthcare, jobs, and more.</p>
-      </div>
-      <div class="card">
-        <img src="images/from-death-to-life.jpg" alt="Before and After" />
-        <h3>Reentry Support</h3>
-        <p>Programs for people exiting incarceration, plus inmate/family reunification support.</p>
-      </div>
+  <!-- Services -->
+  <section class="bg-light py-5 text-center" id="services">
+    <div class="container">
+      <h2>Targeted Services</h2>
+      <img src="communityresouces" class="img-fluid rounded shadow" alt="Services Offered" />
     </div>
   </section>
 
-  <section id="meetings">
+  <!-- Weekly Meetings -->
+  <section class="container py-5 text-center" id="meetings">
     <h2>Weekly Meetings</h2>
-    <img src="images/weekly-meetings.jpg" alt="Weekly Meeting Schedule" class="full-width" />
+    <img src="meetings" class="img-fluid rounded shadow" alt="Weekly Meetings" />
   </section>
 
-  <section id="impact">
-    <h2>Community Impact</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="images/narcan-shelf.jpg" alt="Narcan Access" />
-        <h3>Narcan Access</h3>
-        <p>Free naloxone boxes available for emergency overdose response.</p>
-      </div>
-      <div class="card">
-        <img src="images/warming-shelter.jpg" alt="Emergency Shelter Flyer" />
-        <h3>Emergency Shelter</h3>
-        <p>Volunteer-led shelter opens when temperatures fall below 32° overnight.</p>
-      </div>
-      <div class="card">
-        <img src="images/na-friday.jpg" alt="NA Meeting Flyer" />
-        <h3>New NA Meeting</h3>
-        <p>“Recover Out Loud” - Every Friday at 6PM - All are welcome.</p>
+  <!-- Programs Section -->
+  <section class="bg-light py-5" id="programs">
+    <div class="container">
+      <h2 class="text-center mb-4">Community Programs</h2>
+      <div class="row g-4 text-center">
+        <div class="col-md-4">
+          <img src="Narcan box" class="img-fluid rounded" alt="Narcan Box" />
+          <h5 class="mt-2">Narcan Access</h5>
+          <p>Free naloxone available for overdose response.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="Shelter" class="img-fluid rounded" alt="Shelter Info" />
+          <h5 class="mt-2">Emergency Shelter</h5>
+          <p>Warm shelter opens below 32° overnight.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="NA" class="img-fluid rounded" alt="NA Flyer" />
+          <h5 class="mt-2">New NA Meeting</h5>
+          <p>Fridays at 6PM — All are welcome!</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <img src="images/certificate.jpg" alt="Certificate Celebration" />
-      <img src="images/community-resource.jpg" alt="Community Resource Event" />
-      <img src="images/team-core-coin.jpg" alt="Coin Recognition" />
-      <img src="images/team-shirt.jpg" alt="Sponsor Shoutout" />
-      <img src="images/overnight-shelter.jpg" alt="Overnight Shelter Info" />
+  <!-- Gallery -->
+  <section class="container py-5" id="gallery">
+    <h2 class="text-center mb-4">Gallery</h2>
+    <div class="row g-3">
+      <div class="col-md-3 col-6"><img src="spotlight" class="img-fluid rounded" alt="Community Partner Spotlight" /></div>
+      <div class="col-md-3 col-6"><img src="story" class="img-fluid rounded" alt="From Death to Life" /></div>
+      <div class="col-md-3 col-6"><img src="VHDCfamily" class="img-fluid rounded" alt="VHDC Family" /></div>
+      <div class="col-md-3 col-6"><img src="grabgolunch" class="img-fluid rounded" alt="Grab Lunch" /></div>
+      <div class="col-md-3 col-6"><img src="foodsharestation" class="img-fluid rounded" alt="Food Share" /></div>
+      <div class="col-md-3 col-6"><img src="resourceday" class="img-fluid rounded" alt="Resource Day" /></div>
+      <div class="col-md-3 col-6"><img src="dreamhouseaward" class="img-fluid rounded" alt="Award Celebration" /></div>
+      <div class="col-md-3 col-6"><img src="peersupport" class="img-fluid rounded" alt="Sponsor Shoutout" /></div>
+      <div class="col-md-3 col-6"><img src="recovery" class="img-fluid rounded" alt="Coin Celebration" /></div>
+      <div class="col-md-3 col-6"><img src="Narcan" class="img-fluid rounded" alt="Narcan Display" /></div>
     </div>
   </section>
 
-  <footer id="contact">
-    <p>Visit us: 201 S. Court St, Scottsville, KY 42164</p>
-    <p>Connect on <a href="https://www.facebook.com/vhdreamcenter" target="_blank">Facebook</a></p>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4" id="contact">
+    <p>📍 201 S. Court St, Scottsville, KY 42164</p>
+    <p>
+      💬 <a href="https://www.facebook.com/vhdreamcenter" class="text-white text-decoration-underline" target="_blank">Visit us on Facebook</a>
+    </p>
     <p>&copy; 2024 VH Dream Center</p>
   </footer>
 
